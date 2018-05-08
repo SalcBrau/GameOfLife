@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Conway's Game of Life </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="/styles/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1>Conway's Game of Life</h1>
+					<div id="controls">
+						<button id="run" class="rounded">Run</button>
+						<button id="pause" class="rounded">Pause</button>
+						<button id="clear" class="rounded">Clear</button> Generation: <span id="generation">0</span>
+					</div>
+					<div class="rounded" id="board"></div>
+					<div id="size">
+						Board Size:
+						<button id="small" class="rounded">Size: 50 x 30</button>
+						<button id="medium" class="rounded selected">Size: 70 x 50</button>
+						<button id="big" class="rounded">Size: 100 x 80</button>
+					</div>
+					<div id="speed">
+						Sim Speed:
+						<button id="slow" class="rounded">Slow</button>
+						<button id="med" class="rounded">Medium</button>
+						<button id="fast" class="rounded selected">Fast</button>
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/scripts/scrip.js"></script>
+	</body>
+</html>
