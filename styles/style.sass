@@ -1,0 +1,97 @@
+.center
+	display: block
+	margin: auto
+  
+.young
+	background: pink
+  
+.old 
+	background: red
+  
+.dead
+	background: #1e1f1a
+  
+.selected
+	background: #240b3d
+	font-weight: bold
+	color: #d4b3f5
+
+body
+	background: #000000
+	color: #ffffff
+  
+	button
+		background: #322e36
+		margin-right: 5px
+		color: #ffffff
+		width: 100px
+    
+	h1
+		font-size: 65px
+		margin-top: 19px
+		margin-bottom: 25px
+		font-weight: bold
+		font-family: calibri
+		color: #ffffff
+    
+	#controls
+		@extend .center
+		background: #3b3333
+		width: 600px
+		border-top-right-radius: 25%
+		border-top-left-radius: 25%
+		padding-top: 19px
+		padding-bottom: 10px
+		padding-left: 25px
+		padding-right: 25px
+		font-size: 25px
+		margin-bottom: -5px
+		color: white
+    
+		#run:active, #clear:active, #pause:active 
+			@extend .selected
+			font-weight: normal
+      
+    
+	#clear
+		margin-right: 15px
+    
+	#board
+		@extend .center
+		display: inline-block
+		margin-bottom: 15px
+		min-width: 500px
+		background: #3b3333
+
+   
+		#cells
+			padding-top: 30px
+			padding-left: 30px
+			padding-right: 30px
+			padding-bottom: 30px
+			min-width: 600px
+        
+		.row
+			@extend .center
+			margin-bottom: -10.5px
+      
+			.cell 
+				display: inline-block
+				width: 15px
+				height: 15px
+				border: grey solid 1px
+				margin-bottom: 6px
+    
+	#size, #speed
+		color: #ffffff
+		font-size: 25px
+		margin-bottom: 5px
+    
+	#slow, #small
+		margin-left: 15px
+    
+	button
+		width: 160px
+		font-size: 20px
+		margin-right: 5px
+     
